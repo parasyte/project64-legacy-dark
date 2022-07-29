@@ -21,6 +21,7 @@
     --bg-color-staff-2: #2f2824;
     --border-color-top: #444;
     --border-color-bottom: #222;
+    --border-color-online: #272;
 
     --text-color-red: #c22;
     --link-color-red: #b00;
@@ -28,11 +29,28 @@
     --link-color-red-active: #c44;
     --link-color-red-visited: #900;
     --bg-color-red: rgba(60, 0, 0, 0.2);
-}
+  }
+
+  #index #logo img {
+    display: none;
+  }
+
+  #index #header > a,
+  #container #logo > .wrapper > a {
+    display: block;
+    background-image: url('https://www.project64-legacy.com/dev/images/logo_leg_dark_clear.png');
+    background-repeat: no-repeat;
+    width: 433px;
+    height: 170px;
+  }
 
   body {
     background: var(--bg-color-1);
     color: var(--text-color);
+  }
+
+  #container #logo img {
+    display: none;
   }
 
   a,
@@ -147,6 +165,19 @@
     border-bottom: 1px solid var(--border-color-bottom);
     border-top: 1px solid var(--border-color-top);
     color: var(--text-color);
+  }
+
+  .avatarep_image {
+    background: var(--bg-color-3);
+    border: 1px solid var(--border-color-bottom);
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+  }
+
+  .ot_online {
+    border-left: 3px solid var(--border-color-online);
   }
 
   .mysupport_staff_highlight {
