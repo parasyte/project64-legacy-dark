@@ -1,0 +1,231 @@
+/* ==UserStyle==
+@name           Project64-Legacy Dark
+@namespace      github.com/parasyte/project64-legacy-dark
+@version        1.0.0
+@description    Dark Mode Project64-Legacy
+@author         Jay Oster <jay@kodewerx.org>
+==/UserStyle== */
+
+@-moz-document domain("project64-legacy.com") {
+  :root {
+    --text-color: #bbb;
+    --text-shadow-color: #222;
+    --link-color: #ba9;
+    --link-color-hover: #a98;
+    --link-color-active: #dcb;
+    --link-color-visited: #876;
+    --bg-color-1: #383532;
+    --bg-color-2: #322f2c;
+    --bg-color-3: #2c2926;
+    --bg-color-staff-1: #332c26;
+    --bg-color-staff-2: #2f2824;
+    --border-color-top: #444;
+    --border-color-bottom: #222;
+
+    --text-color-red: #c22;
+    --link-color-red: #b00;
+    --link-color-red-hover: #a00;
+    --link-color-red-active: #c44;
+    --link-color-red-visited: #900;
+    --bg-color-red: rgba(60, 0, 0, 0.2);
+}
+
+  body {
+    background: var(--bg-color-1);
+    color: var(--text-color);
+  }
+
+  a,
+  a:link,
+  #panel .lower a:link,
+  .tfoot a:link {
+    color: var(--link-color);
+  }
+
+  a:hover,
+  #panel .lower a:hover {
+    color: var(--link-color-hover);
+  }
+
+  a:active,
+  #panel .lower a:active {
+    color: var(--link-color-active);
+  }
+
+  a:visited,
+  #panel .lower a:visited {
+    color: var(--link-color-visited);
+  }
+
+  .postbit_buttons > a:link,
+  .postbit_buttons > a:hover,
+  .postbit_buttons > a:visited,
+  .postbit_buttons > a:active {
+    color: var(--link-color);
+    background: var(--bg-color-1);
+    border: 1px solid var(--border-color-bottom);
+  }
+
+  #content,
+  #logo {
+    background-color: var(--bg-color-1);    
+  }
+
+  #panel .upper {
+    border-bottom: 1px solid var(--border-color-bottom);
+    border-top: 1px solid var(--border-color-top);
+  }
+
+  #panel .lower,
+  .post_controls {
+    background-color: var(--bg-color-3);
+    border-bottom: 1px solid var(--border-color-bottom);
+    border-top: 1px solid var(--border-color-top);
+    color: var(--text-color);
+  }
+
+  table,
+  #container {
+    color: var(--text-color);
+  }
+
+  blockquote {
+    background: var(--bg-color-3);
+    border: 1px solid var(--border-color-bottom);
+  }
+
+  .tborder {
+    background: none;
+    border: 1px solid var(--border-color-bottom);
+  }
+
+  .post {
+    background: var(--bg-color-2);
+  }
+
+  .post .post_author {
+    background: var(--bg-color-3);
+  }
+
+  .post.classic .post_author {
+    border: 1px solid var(--border-color-bottom);
+  }
+
+  .post.classic .post_author.mysupport_staff_highlight {
+    background: var(--bg-color-staff-2) !important;
+  }
+
+  .trow_deleted,
+  .post.deleted_post {
+    background-color: var(--bg-color-red);
+  }
+
+  .trow_sep {
+    background: var(--bg-color-3);
+    border-bottom: 1px solid var(--border-color-bottom);
+    color: var(--text-color);
+  }
+
+  .trow1 {
+    background: var(--bg-color-2);
+    border: none;
+  }
+
+  .trow2 {
+    background: var(--bg-color-3);
+    border: none;
+  }
+
+  .tfoot {
+    background: var(--bg-color-2);
+    border-top: 1px solid var(--border-color-top);
+    color: var(--text-color);
+  }
+
+  #footer .upper {
+    background-color: var(--bg-color-2);
+    border-bottom: 1px solid var(--border-color-bottom);
+    border-top: 1px solid var(--border-color-top);
+    color: var(--text-color);
+  }
+
+  .mysupport_staff_highlight {
+    background: var(--bg-color-staff-1) !important;
+  }
+
+  .mysupport_tab_misc {
+    background: var(--bg-color-3);
+    border: 1px solid var(--border-color-bottom);
+  }
+
+  .cke_chrome {
+    border: 1px solid var(--border-color-bottom);
+  }
+
+  .cke_toolgroup {
+    background: var(--bg-color-1);
+    background-image: none;
+    border: 1px solid var(--border-color-bottom);
+    box-shadow: none;
+  }
+
+  a.cke_combo_button {
+    background: var(--bg-color-1);
+    background-image: none;
+    border: 1px solid var(--border-color-bottom);
+    box-shadow: none;
+  }
+
+  .cke_combo_text {
+    color: var(--text-color);
+    text-shadow: 0 1px 0 var(--text-shadow-color);
+  }
+
+  .cke_inner {
+    background: var(--bg-color-3);
+  }
+
+  .cke_top {
+    background: var(--bg-color-3);
+    background-image: none;
+    border-bottom: 1px solid var(--border-color-bottom);
+    box-shadow: none;
+  }
+
+  .cke_wysiwyg_frame,
+  .cke_wysiwyg_div {
+    background-color: var(--bg-color-3);
+  }
+
+  .cke_bottom {
+    background: var(--bg-color-3);
+    background-image: none;
+    border-top: 1px solid var(--border-color-top);
+    box-shadow: none;
+  }
+
+  .red_alert {
+    background-color: var(--bg-color-red);
+    color: var(--text-color-red);
+  }
+
+  .red_alert a:link {
+    color: var(--link-color-red);
+  }
+
+  .red_alert a:hover {
+    color: var(--link-color-red-hover);
+  }
+
+  .red_alert a:active {
+    color: var(--link-color-red-active);
+  }
+
+  .red_alert a:visited {
+    color: var(--link-color-red-visited);
+  }
+
+  .bam_wrapper {
+    display: none;
+  }
+}
